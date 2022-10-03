@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+char str[30];
+printf("enter input:");
+gets(str);
+if(str[0]>='a'&& str[0]<='z') {
+printf("the input is valid");
+}
+    if(str[0]>='0' && str[0]<='9')
+    {
+      printf("the input is valid");
+    }
+
+    if(str[0]>='A'&& str[0]<='Z')
+    {
+      printf("the input is invalid");
+    }
+}
+/////////////////////// OUTV PUT /////////////////////////////
+enter input:_abc
+the input is valid
+....................................
+enter input:abc abc
+the input is invalid
+
+------------------------------------
+enter input:tharun
+the input is valid
+--------------------------------
+enter input:THARUN
+the input is invalid
+--------------------------------
